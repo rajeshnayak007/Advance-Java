@@ -9,7 +9,7 @@ public class Student {
     private String name;
     private String course;
 
-    public Student(int id, String name, String course) {
+    public Student() {
         this.id = id;
         this.name = name;
         this.course = course;
@@ -38,8 +38,13 @@ public class Student {
     public void setCourse(String course) {
         this.course = course;
     }
-
-    public Student() {
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", course='" + course + '\'' +
+                '}';
 
     }
 }
